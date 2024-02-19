@@ -62,7 +62,7 @@ data_transform = transforms.Compose([
 ])
 
 # Load data using Pytorch DataLoader
-dataset = MyDataset(dataset_path="C:\\Users\\oasis\\source\\repos\\PassportClassification\\Dataset", transform=data_transform)
+dataset = MyDataset(dataset_path="./Dataset", transform=data_transform)
 
 total_size = len(dataset)
 train_size = int(0.7 * total_size)
