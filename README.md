@@ -18,3 +18,13 @@ docker-compose up
 **Step 4**: Open a web browser and go to ``http://localhost:5173''.
 
 **Step 5**: Finally, sit back and enjoy using the machine learning application!
+## Repository Structure
+
+| Path | Description
+| :--- | :----------
+| master | The main folder containing the repository.
+| &ensp;&ensp;&boxvr;&nbsp; [Backend](https://github.com/FarzadShahrivari/Document-Classification-App/tree/main/Backend) | Config files containing the settings of the diffusion models.
+| &ensp;&ensp;&boxvr;&nbsp; [Data-Preprocessing-and-Model-Building](https://github.com/FarzadShahrivari/Document-Classification-App/tree/main/Data-Preprocessing-and-Model-Building) | Dataset information.
+| &ensp;&ensp;&boxvr;&nbsp; [Documents](https://github.com/FarzadShahrivari/Document-Classification-App/tree/main/Documents) | DDPM library.
+| &ensp;&ensp;&boxvr;&nbsp; [Frontend](https://github.com/FarzadShahrivari/Document-Classification-App/tree/main/Frontend) | Fast Autoaugment modules.
+| &ensp;&ensp;&boxur;&nbsp; docker-compose.yml | Utility modules.
