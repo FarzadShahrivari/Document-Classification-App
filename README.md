@@ -23,8 +23,9 @@ docker-compose up
 | Path | Description
 | :--- | :----------
 | master | The main folder containing the repository.
-| &ensp;&ensp;&boxvr;&nbsp; [Backend](https://github.com/FarzadShahrivari/Document-Classification-App/tree/main/Backend) | Config files containing the settings of the diffusion models.
-| &ensp;&ensp;&boxvr;&nbsp; [Data-Preprocessing-and-Model-Building](https://github.com/FarzadShahrivari/Document-Classification-App/tree/main/Data-Preprocessing-and-Model-Building) | Dataset information.
-| &ensp;&ensp;&boxvr;&nbsp; [Documents](https://github.com/FarzadShahrivari/Document-Classification-App/tree/main/Documents) | DDPM library.
-| &ensp;&ensp;&boxvr;&nbsp; [Frontend](https://github.com/FarzadShahrivari/Document-Classification-App/tree/main/Frontend) | Fast Autoaugment modules.
-| &ensp;&ensp;&boxur;&nbsp; docker-compose.yml | Utility modules.
+| &ensp;&ensp;&boxvr;&nbsp; [Backend](https://github.com/FarzadShahrivari/Document-Classification-App/tree/main/Backend) | The backend service is responsible for receiving uploaded images from the UI and leveraging the trained ML model to predict the class, after which it sends the results back to the UI. This component is written in Python using Flask.
+| &ensp;&ensp;&boxvr;&nbsp; [Data-Preprocessing-and-Model-Building](https://github.com/FarzadShahrivari/Document-Classification-App/tree/main/Data-Preprocessing-and-Model-Building) | This component utilizes a deep neural network structure to classify documents, including ID cards and passports from various countries. It is implemented in Python using PyTorch with PyTorch Lightning framework.
+| &ensp;&ensp;&boxvr;&nbsp; [Documents](https://github.com/FarzadShahrivari/Document-Classification-App/tree/main/Documents) | This component encompasses comprehensive documentation and explanations detailing the approach employed in the document classification application process.
+| &ensp;&ensp;&boxvr;&nbsp; [Frontend](https://github.com/FarzadShahrivari/Document-Classification-App/tree/main/Frontend) | This component enables users to upload a test image from the dataset. Upon submission, the image is sent to the backend service for classification. This part is implemented in JavaScript using React.
+| &ensp;&ensp;&boxur;&nbsp; docker-compose.yml | 
+This Docker Compose configuration orchestrates, manages, and runs all these services together, ensuring the seamless operation of the document classification app.
